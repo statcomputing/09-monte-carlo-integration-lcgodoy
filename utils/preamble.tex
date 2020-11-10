@@ -1,0 +1,56 @@
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+%% math packages
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{systeme}
+\usepackage{bm}
+
+%% writing pseudo algorithms
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+
+\SetKwInput{KwInput}{Input}
+
+%% url color
+\usepackage{hyperref}
+%% \usepackage{xcolor}
+\usepackage{url} % not crucial - just used below for the URL
+
+\hypersetup{
+    colorlinks = true,
+    linkcolor  = blue
+}
+
+%% Page styling
+\pagestyle{fancy}
+
+%% decreasing space after header
+\setlength{\headsep}{0.2in}
+
+\fancyhf{}
+
+\fancyhead[L]{University of Connecticut}
+\fancyhead[R]{Lucas Godoy}
+
+\fancyfoot[L]{Statistical Computing}
+\fancyfoot[R]{\thepage}
+
+\renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+
+%% Math operators
+%% norm
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+
+%% bolder cdot for inner product
+\newcommand{\bcdot}{\boldsymbol{\cdot}}
+
+%% shortcut for row and col vectors
+\newcommand{\ivec}[1]{\begin{pmatrix} #1 \end{pmatrix}}
+
+%% shortcut for if and only if
+\newcommand{\iif}{\Leftrightarrow}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
